@@ -1,33 +1,49 @@
-
-
-<div class = "row" >
-    <div class="col text-center"> 
-<img src = "/{{trees.IMG}}" style="width: 250px; float: middle; height: 250px;" > 
-    </div>
+<div class="title">
+	<h1>{{trees.NAME}}</h1>
 </div>
 
-<div class = "row ">
-    <h2><div class="col text-center"> 
-     ชื่อ : {{trees.NAME}}  
-     </div></h2>
-</div>
+<div class="container content">
+	<div class = "row" >
+		<div class="col text-center">
+			<img src = "/{{trees.IMG}}" style="width: 250px; float: middle; height: 250px;" >
+		</div>
+	</div>
 
-<div class = "row ">
-    <h2><div class="col text-center"> 
-     ชื่อวิทยาศาสตร์ : {{trees.SCI_NAME}} 
-     </div></h2>
-</div>
+	<div class="text-left">
+		<div class = "row">
+			<h3>
+				<b>ชื่อ :</b>
+				{{trees.NAME}}
+			</h3>
+		</div>
 
-<div class = "row ">
-    <h2><div class="col text-center"> 
-     พื้นที่ค้นพบ : {{trees.AREA}} 
-    </div></h2>
-</div>
+		<div class = "row">
+			<h3>
+				<b> ชื่อวิทยาศาสตร์ :</b>
+				{{trees.SCI_NAME}}
+			</h3>
+		</div>
 
-<div class = "row ">
-    <h2><div class="col text-center"> 
-     รายละเอียดต้นไม้ : {{trees.DETAILS}} 
-    </div></h2>
-</div>
+		<div class = "row ">
+			<h3>
+				<b> พื้นที่ค้นพบ : </b>
+				{{trees.AREA}}
+			</h3>
+				<h2><div class="col">
+				</div></h2>
+		</div>
 
-<h3><div class="badge bg-light " style="width: 12rem; float: middle; "><a href="/">HOME</a></div></h3>
+		<div class = "row ">
+			<h3>
+				<b> รายละเอียดต้นไม้ : </b>
+				{{trees.DETAILS}}
+			</h3>
+		</div>
+	</div>
+
+	<div class="row text-center">
+		<div class="badge bg-light">
+			<h3><a href="/">Home</a></h3>
+		</div>
+	</div>
+</div>
