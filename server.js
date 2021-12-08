@@ -15,9 +15,6 @@ server.engine('handlebars', exphbs());
 server.set('view engine', 'handlebars');
 server.get("/" , async function (request,response){
     response.render("home") 
-    
-    
-    
 })
 
 
