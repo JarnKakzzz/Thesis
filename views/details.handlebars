@@ -1,0 +1,11 @@
+
+
+<ul class="people_list">
+  {{#each trees}}
+    <li><a href="/Tree/{{this.NAME}}"><img src="/{{this.IMG}}" alt="forest1" style="width: 250px; float: middle; height: 250px;" ></a></li>
+    <div class="p-3 mb-2 bg-secondary text-white"><h3> {{this.NAME}} </h3></div>
+  {{/each}}
+</ul>
+
+<h3><div class="badge bg-light " style="width: 12rem; float: middle; "><a href="/">Back!</a></div></h3>
+
