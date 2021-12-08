@@ -22,7 +22,7 @@ server.get("/Details/:CAP" , async function (request,response){
     let CAP = request.params.CAP
     let TREE = await db
     let Tonuay = await TREE.all("SELECT * FROM Tonuay WHERE CAP = '" + CAP +"'")
-    response.render("details" , {trees:Tonuay}) 
+    response.render("details" , {trees:Tonuay, category: CAP})
 })
 
 server.get("/Tree/:NAME" , async function (request,response){

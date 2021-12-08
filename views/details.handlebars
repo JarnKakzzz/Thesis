@@ -1,11 +1,28 @@
+<div class="title">
+  <h1>{{category}}</h1>
+</div>
 
-
-<ul class="people_list">
+<div class="content container">
   {{#each trees}}
-    <li><a href="/Tree/{{this.NAME}}"><img src="/{{this.IMG}}" alt="forest1" style="width: 250px; float: middle; height: 250px;" ></a></li>
-    <div class="p-3 mb-2 bg-secondary text-white"><h3> {{this.NAME}} </h3></div>
+    <div class="row">
+      <div class="col detail-item">
+        <div class="row text-center">
+          <a href="/Tree/{{this.NAME}}" class="image">
+            <img src="/{{this.IMG}}" alt="forest1">
+          </a>
+        </div>
+        <div class="row">
+          <p class="detail-text">
+            {{this.NAME}}
+          </p>
+        </div>
+      </div>
+    </div>
   {{/each}}
-</ul>
 
-<h3><div class="badge bg-light " style="width: 12rem; float: middle; "><a href="/">Back!</a></div></h3>
-
+  <h3>
+    <div class="badge bg-light " style="width: 12rem; float: middle; ">
+      <a href="/">Back</a>
+    </div>
+  </h3>
+</div>
